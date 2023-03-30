@@ -2,11 +2,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="8000.000000pt" height="8000.000000pt" viewBox="0 0 128 128"
+   fill="none" viewBox="0 0 128 128"
  preserveAspectRatio="xMidYMid meet">
 
-<g transform="translate(0.000000,8000.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
 <path d="M0 40000 l0 -40000 40000 0 40000 0 0 40000 0 40000 -40000 0 -40000
 0 0 -40000z m21871 21248 c13072 -7545 18122 -10458 18129 -10458 8 0 4535
 2612 18744 10813 835 483 1520 877 1522 877 2 0 3 -1677 2 -3727 l-3 -3727
@@ -27,6 +25,5 @@ c-318 -190 -18474 -11008 -19304 -11502 -407 -243 -747 -444 -755 -447 -8 -3
         @media (prefers-color-scheme: dark) {
             path { fill: #FFF; }
         }
-    </style>
-</g>
+</style>
 </svg>
