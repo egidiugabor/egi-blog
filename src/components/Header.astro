@@ -1,5 +1,6 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import Hamburger from './Hamburger.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
@@ -8,6 +9,7 @@ import { SITE_TITLE } from '../consts';
 		{SITE_TITLE}
 	</h2>
 	<nav>
+		<Hamburger />
 		<HeaderLink href="/">Home</HeaderLink>
 		<HeaderLink href="/blog">Blog</HeaderLink>
 		<HeaderLink href="/about">About</HeaderLink>
