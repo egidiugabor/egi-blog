@@ -1,18 +1,9 @@
 ---
-import Social from './Social.astro';
 const today = new Date();
+import '../styles/global.css';
 ---
 
-<footer>
-	&copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
-	<Social platform="twitter" username="astrodotbuild" />
-  	<Social platform="github" username="withastro" />
-  	<Social platform="youtube" username="astrodotbuild" />
+<footer class="footer">
+			<p>Questo Blog è proprietà di Egidiu Gabor. Copyright &copy; {today.getFullYear()} | All rights reserved.</p>
 </footer>
-<style>
-	footer {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-</style>
+

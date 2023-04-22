@@ -1,27 +1,11 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import Hamburger from './Hamburger.astro';
-import { SITE_TITLE } from '../consts';
+import Nav from './Nav.astro';
 ---
 
 <header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<Hamburger />
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
-	</nav>
+	<a href="/">
+	<img class="logo" src="/favicon/apple-touch-icon.png" height="80" width="80" alt="logo">
+	</a>
+	<Nav />
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>
+

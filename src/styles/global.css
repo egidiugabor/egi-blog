@@ -1,129 +1,270 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
+
+
+html {
+  background-color: #fdfeff;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: 1rem 0;
+  font-size: 2.0rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+}
+
+
+li, a, button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 5em;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  height: 5em;
+  width: 5em;
+}
+
+.navlinks {
+  padding: 2em;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 0px 30px;
+  height: 100%;
+}
+
+.navlinks li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+  color: white;
+  background-color: black;
+  height: 100%;
+}
+
+.button {
+  align-items: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  transition-duration: 0.4s;
+  width: 50%;
+  margin: auto;
+  margin-top: 1em;
+  background-color: #000000;
+  color: white;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.social-button {
+  align-items: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  transition-duration: 0.4s;
+  width: 100%;
+  margin-top: 0em;
+  background-color: #000000;
+  color: white;
+}
+
+.social-button:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 body {
-	font-family: Verdana, sans-serif;
-	margin: auto;
-	padding: 20px;
-	max-width: 65ch;
-	text-align: left;
-	background-color: #fff;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	line-height: 1.5;
-	color: #444;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b {
-	color: #222;
-}
-a {
-	color: #3273dc;
-}
-nav a {
-	margin-right: 10px;
-}
-textarea {
-	width: 100%;
-	font-size: 16px;
-}
-input {
-	font-size: 16px;
-}
-content {
-	line-height: 1.6;
-}
-table {
-	width: 100%;
-}
-img {
-	max-width: 100%;
-	height: auto;
-}
-code {
-	padding: 2px 5px;
-	background-color: #f2f2f2;
-}
-pre {
-	padding: 1rem;
-}
-pre > code {
-	all: unset;
-}
-blockquote {
-	border: 1px solid #999;
-	color: #222;
-	padding: 2px 0px 2px 20px;
-	margin: 0px;
-	font-style: italic;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 120ch;
+  padding: 1rem;
+  line-height: 1.5;
 }
 
-/* nav styles */
-
-.hamburger {
-	padding-right: 20px;
-	cursor: pointer;
-}
-  
-.hamburger .line {
-	display: block;
-	width: 40px;
-	height: 5px;
-	margin-bottom: 10px;
-	background-color: #ff9776;
+.home-section {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  max-height: 40rem;
 }
 
-.nav-links {
-	width: 100%;
-	top: 5rem;
-	left: 48px;
-	background-color: #ff9776;
-	display: none;
-	margin: 0;
-  }
-  
-  .nav-links a {
-	display: block;
-	text-align: center;
-	padding: 10px 0;
-	text-decoration: none;
-	font-size: 1.2rem;
-	font-weight: bold;
-	text-transform: uppercase;
-  }
-  
-  .nav-links a:hover, a:focus {
-	background-color: #ff9776;
-  }
-  
-  .expanded {
-	display: unset;
-  }
-  
-  @media screen and (min-width: 636px) {
-	.nav-links {
-	  margin-left: 5em;
-	  display: block;
-	  position: static;
-	  width: auto;
-	  background: none;
-	}
-  
-	.nav-links a {
-	  display: inline-block;
-	  padding: 15px 20px;
-	}
+.home-cta {
+  display: grid;
+	align-items: center;
+	justify-content: center;
+  width: 100%;
+  height: 100%;
+  position:relative;
+  padding: 5rem;
+  float: left;
+}
 
-	.hamburger {
-		display: none;
-	}
-  
+.home-image {
+  float: right;
+  width: 100%;
+  height: 100%;
+}
+
+.principal-image {
+  width: 100%;
+  height: 100%;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+
+.blog-section {
+  display: grid;
+  grid-template-columns: 1fr 20em;
+  min-height: 30em;
+}
+
+@media (max-width: 860px) {
+  .blog-section {
+    display: block;
   }
+}
+
+.home-blog-section {
+  display: grid;
+  min-height: 20em;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  margin-top: 0em;
+  min-width: 30em;
+}
+
+.home-postcard {
+  grid-row: 1;
+  grid-column: 1;
+  min-height: 20em;
+  align-items: center;
+  width: 100%;
+  margin-top: 2em;
+  min-width: 20em;
+}
+
+@media (max-width: 860px) {
+  body {
+    max-width: 80ch;
+  }
+  .home-blog-section {
+    min-height: 15em;
+    align-content: center;
+    max-width: 60em;
+    width: 100%;
+    margin-top: 2em;
+    min-width: 15em;
+  }
+}
+
+.list-post {
+  list-style: none;
+}
+
+.home-post-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-post-content {
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  padding: 20px;
+}
+
+.sidebar {
+  display: block;
+  grid-row: 1; 
+  grid-column: 2;
+  width: 100%;
+  margin: 2em 0 0 0;
+}
+
+.sidebar-element-1 {
+  grid-row: 1; 
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+}
+
+.sidebar-element-2 {
+  grid-row: 2; 
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  margin: 2em 0 0 0;
+}
+
+/* Serve per troncare l'anteprima del testo del post */
+p.home-post-text {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /*Il conenuto viene troncato alla terza riga*/
+  -webkit-line-clamp: 3; 
+  overflow: hidden;
+}
+
+footer {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  margin-top: 1em;
+  display: grid;
+	align-items: center;
+	justify-content: center;
+  position:relative;
+}

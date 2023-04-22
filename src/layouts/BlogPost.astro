@@ -30,15 +30,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 	<body>
 		<Header />
+		<div class="container">
 		<main>
 			<article>
-				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
+				{heroImage && <img class="responsive" src={heroImage} alt="" />}
 				<h1 class="title">{title}</h1>
-				<FormattedDate date={pubDate} />
 				{
 					updatedDate && (
 						<div class="last-updated-on">
-							Last updated on <FormattedDate date={updatedDate} />
+							Ultimo aggiornamento <FormattedDate date={updatedDate} />
 						</div>
 					)
 				}
@@ -46,6 +46,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				<slot />
 			</article>
 		</main>
+		</div>
 		<Footer />
 	</body>
 </html>
