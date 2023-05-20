@@ -1,15 +1,12 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import MainLayout from '../layouts/MainLayout.astro';
 import '../styles/global.css';
 ---
-
-<Layout
+<MainLayout 
 	title="Chi sono"
-	description="Chi sono Egidiu Gabor"
-	pubDate={new Date('Aprile 21 2023')}
-	updatedDate={new Date('Aprile 21 2023')}
-	heroImage="/image/chisonobanner.jpg"
->
+	description="Ciao sono Egidiu"
+	heroImage="../image/chisonobanner.jpg"
+>	
 	<p>
 		Mi chiamo Egidiu, sono nato nel lontano '94, e amo la tecnologia in tutte le sue forme. In questa pagina
 		dovrei parlarti di me, ma non lo voglio fare in maniera noiosa, come se fosse il CV della mia vita.
@@ -45,4 +42,4 @@ import '../styles/global.css';
 		in questo Blog.
 	</p>
 	<br>
-</Layout>
+</MainLayout>

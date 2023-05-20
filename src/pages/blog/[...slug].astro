@@ -1,6 +1,9 @@
 ---
 import { CollectionEntry, getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
+import { slugify } from '../../scripts/utils.js';
+import { formatDate } from '../../scripts/utils.js';
+import '../../styles/global.css';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -16,6 +19,12 @@ const { Content } = await post.render();
 ---
 
 <BlogPost {...post.data}>
+	<div class="headerPost">
+		<div class="postCategory">{post.data.category}</div>
+		<div class="postDate">
+			📅 {formatDate(post.data.pubDate)}
+		</div>
+	</div>
 	<h1>{post.data.title}</h1>
 	<Content />
 </BlogPost>

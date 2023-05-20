@@ -2,7 +2,12 @@
 title: "Markdown Style Guide"
 description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
 pubDate: "Jul 01 2022"
-heroImage: "/image/placeholder-hero.jpg"
+heroImage: {
+    src: "/image/placeholder-hero.jpg",
+    alt: "todo"
+}
+draft: false
+category: news
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
@@ -31,7 +36,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ## Images
 
-![This is a placeholder image description](/placeholder-social.jpg)
+<div>![This is a placeholder image description](/image/placeholder-social.jpg)</div>
 
 ## Blockquotes
 
@@ -74,9 +79,9 @@ The blockquote element represents content that is quoted from another source, op
 
 #### Ordered List
 
-1. First item
-2. Second item
-3. Third item
+  1. First item
+  2. Second item
+  3. Third item
 
 #### Unordered List
 
