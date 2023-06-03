@@ -325,12 +325,11 @@ body {
 
 .post-img-container {
   height: 100%;
-  width: 100%;
 }
 
 .home-post-image {
-  height: 100%;
-  width: 100%;
+  object-fit: contain;
+  max-width: 100%;
 }
 
 .home-post-content {
@@ -419,7 +418,6 @@ footer {
   padding-right: 10px;
   font-weight: 300;
 }
-
 .postDate {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -428,13 +426,21 @@ footer {
   color: rgb(0, 0, 0);
   text-align: end;
 }
-
 .quote {
   border-left: #000000;
   border-left-style: solid;
   padding-left: 1em;
   font-weight: 300;
 }
+.photo-gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.youtube {
+  text-align: center;
+}
+
 
 /* Classi utili per le pagine*/
 
@@ -450,4 +456,8 @@ footer {
 .article-content a {
   color: #cf8611;
 }
+
+
+
+
 

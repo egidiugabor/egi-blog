@@ -45,7 +45,7 @@ console.log(page);
 										<div class="post-img-container"><a href={`/blog/${post.slug}/`}><img class="home-post-image" src={post.data.heroImage.src} alt={post.data.heroImage.src}></a></div>
 										<div class="home-post-content">    
 											<div><a href={`/blog/${post.slug}/`}><h1>{post.data.title}</h1></a></div>
-											<div><p class="home-post-text">{post.body}</p></div>
+											<div><p class="home-post-text">{post.data.description}</p></div>
 											<div class="home-post-info">
                             					<div>📅<FormattedDate date={post.data.pubDate} /></div><Link href={`/blog/${post.slug}/`} style="info-button" text="Leggi di più.." />
                         						</div>
