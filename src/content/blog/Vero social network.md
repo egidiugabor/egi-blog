@@ -1,13 +1,13 @@
 ---
 title: "Vero: Il social network che sta spopolando in rete"
 description: In questo articolo vedremo cos'è Vero il social network che si promette di eliminare le identità false
-pubDate: "01/04/2018"
+pubDate: "04/01/2018"
 heroImage: {
     src: "https://ik.imagekit.io/egidiugabor/4_-_Vero_Social_Network/vero-true-social.jpg.webp?updatedAt=1685783785805",
     alt: "Vero social network"
 }
 draft: false
-category: news 
+categoria: social 
 ---
 **Vero è il Social Network del momento!**
 

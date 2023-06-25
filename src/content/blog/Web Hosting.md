@@ -1,13 +1,13 @@
 ---
 title: "Web Hosting: Che cos’è? Quanto costa?"
 description: In questo articolo ti spiegherò cos’è un Hosting Web, a cosa serve principalmente e anche il motivo per cui è importantissimo scegliere il migliore per le proprie esigenze
-pubDate: "01/04/2023"
+pubDate: "04/01/2023"
 heroImage: {
     src: "https://ik.imagekit.io/egidiugabor/3_-_Web_hosting/Web-Hosting.jpg.webp?updatedAt=1685782933024",
     alt: "Web Hosting"
 }
 draft: false
-category: news 
+categoria: news 
 ---
 In questo articolo ti spiegherò **cos’è un Hosting Web**, a cosa serve e il motivo per cui **è importantissimo scegliere il migliore per le proprie esigenze**, in quanto in futuro **può determinare o meno il tuo successo online**.
 
@@ -30,8 +30,6 @@ Non sottovalutarlo che è davvero **molto, ma molto importante!**
 
 # **Che cos’è un Web Hosting?**
 
-!https://egidiugabor.com/wp-content/uploads/2017/12/Finding-The-Best-Web-Host-1024x584.jpg
-
 Il **Web Hosting** è il nome dato allo spazio su cui è allocato il tuo sito/blog. In poche parole **è la “*memoria*” su cui hai caricato i file e il database che compongono il tuo sito Web**.
 
 Questa “*memoria*” non è altro che un server che viene messo a disposizione dai cosiddetti **Web Host**, aziende che gestiscono questi server per conto tuo, in modo tale da non dovertene preoccupare.
@@ -52,9 +50,7 @@ Sceglierne uno di qualità **significa avere un tempo di caricamento del tuo si
 
 **Quante volte ti sarà infatti capitato di chiudere una pagina Web soltanto perché ci metteva molto ad aprirsi?**
 
-*A me tante*
-
-!https://s.w.org/images/core/emoji/14.0.0/svg/1f600.svg
+*A me tante..*
 
 Quindi la scelta in questa fase è molto delicata. Non preoccuparti più sotto ti elencherò anche i servizi che reputo i migliori in questo modo sarai facilitato nella scelta e non dovrai cambiarla in seguito.
 
@@ -80,7 +76,7 @@ Puoi fare dei confronti tu stesso con altri portali e **vedrai che nel 95% dei 
 
 - [PageSpeed by Google](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fegidiugabor.com%2F&tab=mobile)
 
-### **Dedicated Hosting**
+## Dedicated Hosting
 
 **Un’opzione costosa, ma che da maggiore flessibilità**. In questo caso il tuo sito è ospitato su un server a sé, quindi non condiviso con nessun altro sito.
 

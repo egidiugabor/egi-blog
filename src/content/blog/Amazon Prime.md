@@ -1,13 +1,13 @@
 ---
 title: "Amazon Prime: 5 + 1 motivi per iscriversi subito"
 description: In questo post voglio elencare 5 motivi per iscriversi subito ad Amazon Prime
-pubDate: "01/02/2023"
+pubDate: "02/01/2023"
 heroImage: {
     src: "https://ik.imagekit.io/egidiugabor/2_-_Amazon_Prime__5___1_motivi_per_iscriversi_subito/Amazon_Prime_5___1_motivi_per_iscriversi_subito-2.jpg?updatedAt=1685738761609",
     alt: "Amazon Prime"
 }
 draft: false
-category: news 
+categoria: amazon 
 ---
 Non sei ancora iscritto ad **Amazon Prime**? In questo articolo ti voglio elencare i 5 + 1 motivi per cui devi utilizzare Amazon Prime. 
 

@@ -1,13 +1,13 @@
 ---
 title: "Sony Alpha 7 prima generazione"
 description: In questo articolo parliamo della Sony Alpha 7, la mia prima fotocamera mirrorless
-pubDate: "01/08/2019"
+pubDate: "08/01/2019"
 heroImage: {
     src: "https://ik.imagekit.io/egidiugabor/5_Sony_alpha_7/Sony_alpha_7_copertina_articolo_blog.jpg?updatedAt=1685812027765",
     alt: "Sony alpha 7"
 }
 draft: false
-category: news 
+categoria: sony 
 ---
 Alla fine mi sono deciso e ho acquistato finalmente la mia nuova compagna di viaggio, la **Sony Alpha 7** di prima generazione.
 

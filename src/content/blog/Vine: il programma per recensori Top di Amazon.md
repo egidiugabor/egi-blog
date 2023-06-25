@@ -7,7 +7,7 @@ heroImage: {
     alt: "Amazon Vine"
 }
 draft: false
-category: news
+categoria: amazon
 ---
 
 Amazon ha finalmente rilasciato anche in Italia il programma Amazon Vine, che non è altro che un servizio al quale si accede solo su invito che permette ai migliori recensori di Amazon di ricevere prodotti gratuiti, delle volte anche in Anteprima, da recensire sul noto portale.
