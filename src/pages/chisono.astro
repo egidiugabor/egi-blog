@@ -1,45 +1,124 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import '../styles/global.css';
+
+const { title, description, heroImage } = Astro.props;
+
 ---
-<MainLayout 
-	title="Chi sono"
-	description="Ciao sono Egidiu"
-	heroImage="../image/chisonobanner.jpg"
->	
-	<p>
-		Mi chiamo Egidiu, sono nato nel lontano '94, e amo la tecnologia in tutte le sue forme. In questa pagina
-		dovrei parlarti di me, ma non lo voglio fare in maniera noiosa, come se fosse il CV della mia vita.
-	</p>
-	<p>
-		Spero sia apprezzato..
-	</p>
-	<p>
-		Sono nato in un piccolo paesino vicino a Bacau in Romania. Fin da piccolo ho amato ogni cosa che avesse
-		un pulsante di accensione, quindi all'età di 6 anni i miei mi hanno comprato il primo PC fisso.
-	</p>
-	<p>
-		Era appena uscito Windows 98, ed avere tra le mani una macchina così potente mi affascinava tantissimo.
-		Non avevo nessuno che mi insegnasse, testavo, provavo e facevo tutto da solo.
-	</p>
-	<p>
-		All'età di 10 anni mi sono trasferito in Italia, e questo passo mi ha letterlamente cambiato la vita.
-		Mi si è aperto un mondo, ho scoperto internet e ho iniziato a dedicarmi attivamente anche al calcio.
-	</p>
-	<p>
-		Ho fatto un ITIS con indirizzo informatico, che mi ha introdotto definitivamente al mondo della programmazione.
-		In quinta superiore insieme ad un amico abbiamo aperto il nostro primo Blog Wordpress su Android, si chiamava Fundroid, 
-		dove parlavamo scrivevamo recensioni, articoli e notizie sul mondo Android a 360°. 
-	</p>
-	<p>
-		Ho iniziato Ingegneria Informatica all'università di Padova, per approfondire e migliorare le mie conoscenze informatiche.
-		E dopo 3 anni ho fatto un corso per diventare Sviluppatore Cobol Mainframe.
-		Ho lavorato come sviluppatore Cobol Mainframe per una società di consulenza a Milano, dove ho acquisito numerose competenze
-		sia tecniche che umane. 
-	</p>
-	<p>
-		Ora sto iniziando una nuova esperienza lavorativa che mi porterà a scoprire nuove tecnologie e nuovi progetti, che vi racconterò
-		in questo Blog.
-	</p>
-	<br>
-</MainLayout>
+<html lang="it">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<div class="heroImagePage">
+                <img src="../../public/image/chisonobanner.jpg" width="100%">
+            </div>
+			<section class="chisono-section">
+				<div class="chisono-image"><img class="principal-image" src="https://ik.imagekit.io/egidiugabor/General%20image%20site/Egidiu%20Gabor%20-%20infanzia-7.jpg?updatedAt=1690815664299" alt="logo"></img></div>
+				<div class="chisono-postcard">
+					<h1>Altri progetti..</h1>
+					<h3><i>Dal 2022 ad oggi..</i></h3>
+					<p>Dal 2022, sono diventato Host, entrando per la prima volta <b>nel mondo degli affitti brevi,</b> un mondo interessante, tutto da scoprire e di cui vi parlerò di specifico sul Blog. 
+					Ad Aprile del 2023 sono diventato anche SuperHost su AirBnB!</p>	
+				</div>
+			</section>
+			<section class="chisono-section">
+				<div class="chisono-postcard">
+					<h1>Posizione lavorativa attuale..</h1>
+					<h3><i>Dal 2023 ad oggi..</i></h3>
+					<p>Attualmente ho avuto la possibilità di accettare un offerta di <b>Deloitte</b>, per lavorare nella loro sezione Risk Advisory. 
+					Un’esperienza nuova che mi sta facendo crescere moltissimo, sotto tutti i punti di vista.
+					</p>
+				</div>
+				<div class="chisono-image"><img class="principal-image" src="https://ik.imagekit.io/egidiugabor/General%20image%20site/Egidiu%20Gabor%20-%20infanzia-8.jpg?updatedAt=1690815664078" alt="logo"></img></div>
+			</section>
+			<section class="chisono-section">
+				<div class="chisono-image"><img class="principal-image" src="https://ik.imagekit.io/egidiugabor/General%20image%20site/Egidiu%20Gabor%20-%20infanzia-3.jpg?updatedAt=1690814998664" alt="logo"></img></div>
+				<div class="chisono-postcard">
+					<h1>Esperienza lavorativa..</h1>
+					<h3><i>Dal 2018 al 2023</i></h3>
+					<p>Decido quindi di andare a <b>Milano</b>, ho effettuato un corso per imparare a <b>programmare in COBOL</b>, grazie al quale ho avuto la possibilità di lavorare per alcuni clienti importanti:
+						<br>
+						- 6 mesi ho lavorato in <b>Deutsche Bank</b>, come consulente esterno addetto allo sviluppo software e all’implementazione di nuove evolutive
+						<br>
+						- i successivi 5 anni ho lavorato per <b>Accenture</b>, gestendo il ciclo di vita del software E2E, facendo analisi, e lavorando a stretto contatto con i clienti, per importanti clienti come Intesa San Paolo ecc..</p>	
+				</div>
+			</section>
+			<section class="chisono-section">
+				<div class="chisono-postcard">
+					<h1>Esperienza Universitaria</h1>
+					<h3><i>Dal 2015 al 2018</i></h3>
+					<p>Ho iniziato a studiare <b>Ingegneria Informatica a Padova</b>, un percorso, particolare, difficile, che non mi ha dato i stimoli che speravo. 
+					Dopo 3 anni, capendo di andare fuori corso ho deciso di iniziare a lavorare e di fare lo studente lavoratore a tempo pieno.  
+					</p>
+				</div>
+				<div class="chisono-image"><img class="principal-image" src="https://ik.imagekit.io/egidiugabor/General%20image%20site/Egidiu%20Gabor%20-%20infanzia-6.jpg?updatedAt=1690815327027" alt="logo"></img></div>
+			</section>
+			<section class="chisono-section">
+				<div class="chisono-image"><img class="principal-image" src="https://ik.imagekit.io/egidiugabor/General%20image%20site/Egidiu%20Gabor%20-%20infanzia-5.jpg?updatedAt=1690815226362" alt="logo"></img></div>
+				<div class="chisono-postcard">
+					<h1>Il primo progetto WEB: funDROID.it</h1>
+					<h3><i>Dal 2014 al 2016</i></h3>
+					<p>Insieme ad un grande amico abbiamo lanciato un <b>Blog a tema Android!</b> 
+						<br>
+						Anche se l’abbiamo dovuto abbandonare dopo qualche anno, credo sia stata l’esperienza più formativa in ambito web che mi sia mai capitata. 
+					Ho imparato a costruire siti con <b>Wordpress, basi di Marketing e promozione web,</b> ho imparato le dinamiche dei social, il rapporto con i clienti e le aziende, ho imparato a gestire i lavori di gruppo, grazie ai ragazzi che ci hanno aiutato nella stesura degli articoli, e tanto altro ancora..</p>	
+				</div>
+			</section>
+			<section class="chisono-section">
+				<div class="chisono-postcard">
+					<h1>L’amore per il calcio e lo sport..</h1>
+					<h3><i>Dal 2008 al 2016</i></h3>
+					<p>Amavo e amo tuttora il calcio. <b>Giocai fino all'età di 21 anni</b>, 
+					quando a causa di un brutto infortunio al ginocchio dovetti dire addio 
+					alla mia più grande passione.
+					Decisi di intraprendere <b>la carriera da Arbitro, durata ben 5 lunghi anni.</b> 
+					Fu un'esperienza formativa, che mi aiutò a superare la mia natura introversa.</p>
+				</div>
+				<div class="chisono-image"><img class="principal-image" src="https://ik.imagekit.io/egidiugabor/General%20image%20site/Egidiu%20Gabor%20-%20infanzia.png?updatedAt=1690814999200" alt="logo"></img></div>
+			</section>
+			<section class="chisono-section">
+				<div class="chisono-image"><img class="principal-image" src="https://ik.imagekit.io/egidiugabor/General%20image%20site/Egidiu%20Gabor%20-%20infanzia-4.jpg?updatedAt=1690814998585" alt="logo"></img></div>
+				<div class="chisono-postcard">
+					<h1>L'informatica come base di vita..</h1>
+					<h3><i>Dal 2010 al 2014</i></h3>
+					<p>Arrivati alle superiori, <b>scelsi di studiare informatica</b>,
+					materia che mi diede l'opportunità di avvicinarmi per la prima volta alla programmazione.
+					Fu un passaggio naturale, che mi forgiò e mi fornì le basi e gli strumenti necessari 
+					per la mia futura carriera lavorativa.</p>	
+				</div>
+			</section>
+			<section class="chisono-section">
+				<div class="chisono-postcard">
+					<h1>La mia infanzia..</h1>
+					<h3><i>Dal 2004 al 2009 </i></h3>
+					<p>Nel 2004, la mia famiglia decise di trasferirsi in Italia. 
+					Nel frattempo io crescevo e <b>Windows era passato alla versione XP</b>. 
+					In quegli anni ebbi il mio primo incontro con Internet, un mondo vasto, 
+					affascinante, pieno di opportunità straordinarie, ma che non ero ancora 
+					in grado di scorgere a pieno.
+					</p>
+				</div>
+				<div class="chisono-image"><img class="principal-image" src="https://ik.imagekit.io/egidiugabor/General%20image%20site/Egidiu%20Gabor%20-%20infanzia-2.jpg?updatedAt=1690814998704" alt="logo"></img></div>
+			</section>
+			<section class="chisono-section">
+				<div class="chisono-image"><img class="principal-image" src="https://ik.imagekit.io/egidiugabor/General%20image%20site/Egidiu%20Gabor%20-%20infanzia.jpg?updatedAt=1690814998635" alt="logo"></img></div>
+				<div class="chisono-postcard">
+					<h1>L’inizio della mia esistenza..</h1>
+					<h3><i>Dal 1994 al 2003</i></h3>
+					<p>Sono <b>nato nel lontano ‘94 a Bacau</b>, una città a nord-est della Romania. 
+					Avevo appena 4 anni quando, per la prima volta, mi trovai tra le mani un PC. 
+					C'era Windows 98, e quello per me fu amore a prima vista. Sebbene inizialmente fosse più uno
+					strumento di svago, si rivelò presto un insegnante prezioso..
+					</p>	
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
