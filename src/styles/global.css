@@ -519,6 +519,12 @@ footer {
   min-width: 20em;
 }
 
+.line {
+  width: "100%";
+  size: "20";
+  color: "black";
+  border-top: 1px solid rgb(100, 100, 100);
+}
 
 
 
