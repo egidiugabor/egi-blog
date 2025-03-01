@@ -149,8 +149,11 @@ img {
 .social-button.youtube {
   background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(40,40,40,1) 120%);
 }
-.social-button.twitter {
-  background: linear-gradient(90deg, rgba(29,161,242,1) 0%, rgba(40,40,40,1) 120%);
+.social-button.X {
+  background: linear-gradient(90deg, rgb(0, 9, 14) 0%, rgba(40,40,40,1) 120%);
+}
+.social-button.Threads {
+  background: linear-gradient(90deg, rgb(0, 9, 14) 0%, rgba(40,40,40,1) 120%);
 }
 
 .social-button:hover {
