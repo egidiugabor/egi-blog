@@ -9,9 +9,10 @@ import Sidebar from '../../components/Sidebar.astro';
 import '../../styles/global.css';
 import Pagination from '../../components/Pagination.astro';
 import Link from '../../components/Link.astro';
+import type { GetStaticPathsResult, Page } from 'astro';
+import type { CollectionEntry } from 'astro:content';
 
-export async function getStaticPaths({ paginate }) {
-
+export async function getStaticPaths({ paginate }): Promise<GetStaticPathsResult> {
 	const posts = (await getCollection('blog')).sort(
 	(b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 	);
@@ -21,8 +22,7 @@ export async function getStaticPaths({ paginate }) {
 	})
 }
 
-const { page } = Astro.props;
-
+const { page } = Astro.props as { page: Page<CollectionEntry<'blog'>> };
 ---
 
 <!DOCTYPE html>
@@ -46,8 +46,8 @@ const { page } = Astro.props;
 											<div><a href={`/blog/${post.slug}/`}><h1>{post.data.title}</h1></a></div>
 											<div><p class="home-post-text">{post.data.description}</p></div>
 											<div class="home-post-info">
-                            					<div>📅<FormattedDate date={post.data.pubDate} /></div><Link href={`/blog/${post.slug}/`} style="info-button" text="Leggi di più.." />
-                        						</div>
+                             					<div>📅<FormattedDate date={post.data.pubDate} /></div><Link href={`/blog/${post.slug}/`} style="info-button" text="Leggi di più.." />
+                         						</div>
 										</div>
 									</section>
 								</li>
@@ -67,3 +67,66 @@ const { page } = Astro.props;
 		</script>
 	</body>
 </html>
+
+<style>
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2rem 1rem;
+	}
+	.page-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--text-color);
+		text-align: center;
+		margin-bottom: 0.5rem;
+	}
+	.page-description {
+		text-align: center;
+		color: var(--text-light);
+		font-size: 1.125rem;
+		margin-bottom: 3rem;
+	}
+	.posts-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+	}
+	.post-title {
+		font-size: 1.5rem;
+		margin: 1rem 0;
+	}
+	.post-title a {
+		color: var(--text-color);
+		text-decoration: none;
+		transition: color 0.2s ease;
+	}
+	.post-title a:hover {
+		color: var(--primary-color);
+	}
+	.post-excerpt {
+		color: var(--text-light);
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+	.post-date {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		color: var(--text-light);
+	}
+	.icon {
+		font-size: 1.25rem;
+	}
+	@media (max-width: 768px) {
+		.posts-grid {
+			grid-template-columns: 1fr;
+		}
+		.blog-section {
+			grid-template-columns: 1fr;
+		}
+		.page-title {
+			font-size: 2rem;
+		}
+	}
+</style>

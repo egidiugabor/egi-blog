@@ -1,11 +1,11 @@
 ---
 // library imports
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 interface Props {
     text: string;
     href: string;
-    style: "primary" | "secondary" | "info-button";
+    style: "primary" | "secondary" | "info-button" | "nav-button";
     icon?: {
         name: string;
         side: "left" | "right";
@@ -52,3 +52,36 @@ const {
 }
 
 </a>
+
+<style>
+    .link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: inherit;
+    }
+    .info-button {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: var(--accent);
+        color: white;
+        transition: background-color 0.2s ease;
+    }
+    .info-button:hover {
+        background-color: var(--accent-dark);
+    }
+    .nav-button {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        color: var(--text-color);
+        transition: all 0.2s ease;
+    }
+    .nav-button:hover {
+        background-color: var(--accent);
+        color: white;
+    }
+    .bordered {
+        border: 1px solid var(--text-color);
+    }
+</style>

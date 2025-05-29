@@ -1,11 +1,27 @@
 ---
+import { SITE_TITLE } from '../consts';
+import { Icon } from 'astro-icon/components';
+
+const currentYear = new Date().getFullYear();
 const today = new Date();
 import '../styles/global.css';
 ---
 
 <footer class="footer">
-			<p>Questo Blog è proprietà di Egidiu Gabor. Copyright &copy; {today.getFullYear()} | All rights reserved.</p>
-			<p><a href="https://www.iubenda.com/privacy-policy/37215894/cookie-policy" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script></p>
-			<p><a href="https://www.iubenda.com/privacy-policy/37215894" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script></p>
+	<p>Questo Blog è proprietà di Egidiu Gabor. Copyright &copy; {today.getFullYear()} | All rights reserved.</p>
+	<p><a href="https://www.iubenda.com/privacy-policy/37215894/cookie-policy" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script></p>
+	<p><a href="https://www.iubenda.com/privacy-policy/37215894" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script></p>
 </footer>
+
+<style>
+	footer {
+		box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+		padding: 2em;
+		margin-top: 1em;
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+</style>
 

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
 
-
 html {
   background-color: #fdfeff;
   font-family: "Roboto", sans-serif;
@@ -28,7 +27,6 @@ p {
   margin: 0.8rem 0;
   font-weight: 400;
 }
-
 
 li, button {
   font-family: "Roboto", sans-serif;
@@ -328,7 +326,6 @@ body {
   .list-post {
     margin-left: 0rem;
   }
-
 }
 
 .post-img-container {
